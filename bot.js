@@ -1,4 +1,4 @@
-const token = require('token.json');
+const token = require('./token.json');
 const Discord = require('discord.js');
 const Enmap = require("enmap");
 const fs = require("fs");
@@ -30,5 +30,17 @@ fs.readdir("./commands/", (err, files) => {
         client.commands.set(commandName, props);
     });
 });
+
+client.hasPerm = function (perm, msg) {
+    // example of usage; console.log(client.hasPerm('CHANGE_NICKNAME', message));
+    if (!msg) return console.log('msg argument missing');
+
+    try {
+        return client.guilds.get(msg.guild.id).me.hasPermission(perm);
+    } catch (e) {
+        console.error(e);
+    }
+};
+
 
 client.login(token.token);
