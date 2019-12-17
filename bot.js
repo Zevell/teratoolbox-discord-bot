@@ -32,7 +32,7 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 client.hasPerm = function (perm, msg) {
-    // example of usage; console.log(client.hasPerm('CHANGE_NICKNAME', message));
+    // example of usage; client.hasPerm('CHANGE_NICKNAME', message);
     if (!msg) return console.log('msg argument missing');
 
     try {
