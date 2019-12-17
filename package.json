@@ -1,0 +1,23 @@
+{
+  "name": "teratoolbox-discord-bot",
+  "version": "1.0.0",
+  "description": "A bot for the teratoolbox Discord server",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zevell/teratoolbox-discord-bot.git"
+  },
+  "author": "Zeval#7599",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Zevell/teratoolbox-discord-bot/issues"
+  },
+  "homepage": "https://github.com/Zevell/teratoolbox-discord-bot#readme"
+}
